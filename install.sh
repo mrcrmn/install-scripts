@@ -16,7 +16,7 @@ sudo apt-get install --yes git curl zip nginx software-properties-common
 sudo apt-get install --yes python-certbot-nginx 
 
 # PHP
-sudo apt-get install --yes php7.3-fpm php7.3-common php7.3-xml php7.3-mbstring php7.3-zip 
+sudo apt-get install --yes php7.3-fpm php7.3-common php7.3-mysql php7.3-xml php7.3-mbstring php7.3-zip 
 
 # Composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
