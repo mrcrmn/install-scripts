@@ -54,7 +54,7 @@ EOF
 
 # Changing permissions
 chown -R $USER:$WEB_USER $WEB_DIR/$1
-chmod 775 -R $WEB_USER $WEB_DIR/$1
+chmod 777 -R $WEB_DIR/$1
 
 # Symlink
 ln -s $NGINX_AVAILABLE_VHOSTS/$1 $NGINX_ENABLED_VHOSTS
