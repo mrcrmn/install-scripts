@@ -53,7 +53,7 @@ server {
 EOF
 
 # Changing permissions
-chown -R $WEB_USER:$WEB_USER $WEB_DIR/$1
+chown -R $USER:$WEB_USER $WEB_DIR/$1
 chmod 775 -R $WEB_USER $WEB_DIR/$1
 
 # Symlink

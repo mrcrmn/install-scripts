@@ -1,5 +1,8 @@
-# PHP & nginx
-curl -sS https://raw.githubusercontent.com/mrcrmn/install-scripts/master/install-php.sh | sudo bash
+### Download
+curl https://raw.githubusercontent.com/mrcrmn/install-scripts/master/download.sh | sudo bash
 
-# New Site
-curl -sS https://raw.githubusercontent.com/mrcrmn/install-scripts/master/new-site.sh > ~/new-site.sh
+### PHP & nginx
+sudo bash install.sh
+
+### New Site
+sudo bash new-site.sh <example.com>
