@@ -20,5 +20,3 @@ sudo apt-get install --yes php7.3-fpm php7.3-common php7.3-mysql php7.3-bcmath p
 
 # Composer
 curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer
-
-sudo chmod 777 -R /var/www
