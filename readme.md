@@ -10,5 +10,5 @@ sudo bash install-mysql.sh
 ### New Database and User
 sudo bash new-database.sh <db_name>
 
-### New Site
+### New Sit
 sudo bash new-site.sh <example.com>

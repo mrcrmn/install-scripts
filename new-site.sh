@@ -17,7 +17,7 @@ NGINX_REQUEST_URI='$request_uri'
 [ $# != "1" ] && die "Usage: $(basename $0) domainName"
 
 # Create nginx config file
-cat > $NGINX_AVAILABLE_VHOSTS/$1 <<EOF
+sudo cat > $NGINX_AVAILABLE_VHOSTS/$1 <<EOF
 server {
     listen 80;
     server_name $1;
@@ -53,10 +53,11 @@ server {
 EOF
 
 # Changing permissions
-chown -R $USER:$WEB_USER $WEB_DIR/$1
-chmod 2755 -R $WEB_DIR/$1
+sudo chown -R $WEB_USER:$WEB_USER $WEB_DIR/$1
+sudo find $WEB_DIR/$1 -type f -exec chmod 644 {} \;
+sudo find $WEB_DIR/$1 -type d -exec chmod 755 {} \;
 
 # Symlink
-ln -s $NGINX_AVAILABLE_VHOSTS/$1 $NGINX_ENABLED_VHOSTS
+sudo ln -s $NGINX_AVAILABLE_VHOSTS/$1 $NGINX_ENABLED_VHOSTS
 
 ok "Site Created for $1"
