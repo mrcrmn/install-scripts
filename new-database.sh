@@ -6,4 +6,4 @@ sudo mysql -e "create database $1; GRANT ALL PRIVILEGES ON $1.* TO '$1'@'localho
 
 echo "Created Database: $1"
 echo "Created new User: $1"
-echo "Password for $i is: $PW"
+echo "Password for $1 is: $PW"
