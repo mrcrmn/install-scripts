@@ -16,4 +16,4 @@ redirect_stderr=true
 stdout_logfile=/home/forge/app.com/worker.log
 EOF
 
-echo "Created configuration file $SUPERCISOR_CONF_DIR/$1.conf"
+echo "Created configuration file $SUPERVISOR_CONF_DIR/$1.conf"
