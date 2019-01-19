@@ -2,4 +2,4 @@
 
 sudo apt-get -y update
 
-sudo apt install -y redis-server
+sudo apt-get install -y redis-server
