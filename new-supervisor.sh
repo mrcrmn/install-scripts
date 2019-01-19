@@ -7,7 +7,7 @@ SUPERVISOR_CONF_DIR='/etc/supervisor/conf.d'
 sudo cat > $SUPERVISOR_CONF_DIR/$1.conf <<EOF
 [program:$1]
 process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/$i/artisan queue:work
+command=php /var/www/$1/artisan queue:work
 autostart=true
 autorestart=true
 user=$USER
